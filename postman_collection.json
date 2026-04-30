@@ -1,0 +1,104 @@
+{
+  "info": {
+    "name": "Laundry Order Management API",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "variable": [
+    { "key": "base_url", "value": "http://localhost:3000/api" },
+    { "key": "order_id", "value": "" }
+  ],
+  "item": [
+    {
+      "name": "Create Order",
+      "request": {
+        "method": "POST",
+        "header": [{ "key": "Content-Type", "value": "application/json" }],
+        "url": "{{base_url}}/orders",
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"customerName\": \"Ravi Kumar\",\n  \"phone\": \"9876543210\",\n  \"garments\": [\n    { \"type\": \"Shirt\", \"quantity\": 3 },\n    { \"type\": \"Saree\", \"quantity\": 2 },\n    { \"type\": \"Pants\", \"quantity\": 1 }\n  ]\n}"
+        }
+      }
+    },
+    {
+      "name": "Get All Orders",
+      "request": {
+        "method": "GET",
+        "url": "{{base_url}}/orders"
+      }
+    },
+    {
+      "name": "Filter by Status",
+      "request": {
+        "method": "GET",
+        "url": {
+          "raw": "{{base_url}}/orders?status=RECEIVED",
+          "query": [{ "key": "status", "value": "RECEIVED" }]
+        }
+      }
+    },
+    {
+      "name": "Filter by Customer Name",
+      "request": {
+        "method": "GET",
+        "url": {
+          "raw": "{{base_url}}/orders?name=Ravi",
+          "query": [{ "key": "name", "value": "Ravi" }]
+        }
+      }
+    },
+    {
+      "name": "Filter by Phone",
+      "request": {
+        "method": "GET",
+        "url": {
+          "raw": "{{base_url}}/orders?phone=9876543210",
+          "query": [{ "key": "phone", "value": "9876543210" }]
+        }
+      }
+    },
+    {
+      "name": "Filter by Garment Type",
+      "request": {
+        "method": "GET",
+        "url": {
+          "raw": "{{base_url}}/orders?garmentType=Saree",
+          "query": [{ "key": "garmentType", "value": "Saree" }]
+        }
+      }
+    },
+    {
+      "name": "Get Order by ID",
+      "request": {
+        "method": "GET",
+        "url": "{{base_url}}/orders/{{order_id}}"
+      }
+    },
+    {
+      "name": "Update Order Status",
+      "request": {
+        "method": "PATCH",
+        "header": [{ "key": "Content-Type", "value": "application/json" }],
+        "url": "{{base_url}}/orders/{{order_id}}/status",
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"status\": \"PROCESSING\"\n}"
+        }
+      }
+    },
+    {
+      "name": "Delete Order",
+      "request": {
+        "method": "DELETE",
+        "url": "{{base_url}}/orders/{{order_id}}"
+      }
+    },
+    {
+      "name": "Dashboard",
+      "request": {
+        "method": "GET",
+        "url": "{{base_url}}/orders/dashboard"
+      }
+    }
+  ]
+}
