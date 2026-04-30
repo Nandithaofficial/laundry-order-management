@@ -14,7 +14,8 @@ connectDB();
 
 app.use(cors({
   origin: "https://laundry-order-management-1-nl9v.onrender.com",
-  methods: ["GET", "POST", "PATCH", "DELETE"],
+  methods: ["GET", "POST", "PATCH", "DELETE", "OPTIONS"],
+  allowedHeaders: ["Content-Type"],
 }));
 app.use(express.json());
 
