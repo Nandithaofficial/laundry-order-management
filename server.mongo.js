@@ -12,7 +12,10 @@ const PORT = process.env.PORT || 3000;
 // Connect to MongoDB
 connectDB();
 
-app.use(cors());
+app.use(cors({
+  origin: "https://laundry-order-management-1-nl9v.onrender.com",
+  methods: ["GET", "POST", "PATCH", "DELETE"],
+}));
 app.use(express.json());
 
 app.use("/api/orders", orderRoutes);
