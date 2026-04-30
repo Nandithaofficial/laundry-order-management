@@ -184,6 +184,17 @@ http://localhost:3000/api
 | 📦 Orders | List all orders, filter, update status, delete |
 
 ---
+## 📸 Screenshots
+
+### 📊 Dashboard
+![Dashboard](./screenshots/dashboard.png)
+![Dashboard](./screenshots/dashboard(1).png)
+
+### ➕ Create Order
+![Create Order](./screenshots/createorder.png)
+
+### 📦 Orders Page
+![Orders](./screenshots/orders.png)
 
 ## 🤖 AI Usage Report
 
@@ -256,7 +267,7 @@ http://localhost:3000/api
 ### Installation
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/laundry-order-management.git
+git clone https://github.com/Nandithaofficial/laundry-order-management.git
 cd laundry-order-management
 npm install
 ```
