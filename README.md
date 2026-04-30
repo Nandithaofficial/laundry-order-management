@@ -6,6 +6,13 @@ A full-stack web application for managing dry cleaning orders — built with Nod
 📡 **API Base URL:** https://laundry-order-management-657i.onrender.com/api
 
 ---
+## ⚡ Quick Overview
+
+- Full-stack laundry order management system
+- Node.js + Express + MongoDB backend
+- React + Vite frontend
+- Features: order creation, tracking, filtering, dashboard
+- Deployed on Render
 ## 📸 Screenshots
 
 ### 📊 Dashboard
@@ -17,6 +24,13 @@ A full-stack web application for managing dry cleaning orders — built with Nod
 
 ### 📦 Orders Page
 ![Orders](./screenshots/orders.png)
+
+## 💡 Why This Project
+
+This project simulates a real-world laundry shop system, helping manage daily orders, track processing status, and generate billing efficiently.
+## 🧾 Resume Description
+
+Built a full-stack laundry order management system using Node.js, Express, MongoDB, and React. Implemented order creation, status tracking, filtering, and dashboard analytics. Deployed on Render with REST API and responsive frontend. Leveraged AI tools for rapid development and debugging.
 
 ## 🗂️ Project Structure
 
@@ -56,12 +70,6 @@ laundry-order-management/
 ```
 
 ---
-## 💡 Why This Project
-
-This system simulates real-world laundry shop operations, helping manage orders, track progress, and generate billing efficiently.
-## 🧾 Resume Description
-
-Built a full-stack laundry order management system using Node.js, Express, MongoDB, and React. Implemented order creation, status tracking, filtering, and dashboard analytics. Deployed on Render with REST API and responsive frontend. Leveraged AI tools for rapid development and debugging.
 ## 🚀 Setup Instructions
 
 ### Prerequisites
